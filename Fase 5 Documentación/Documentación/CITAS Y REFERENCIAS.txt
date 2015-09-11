@@ -1,0 +1,121 @@
+Ej. (Kaku, 2009, p.90)
+
+Kaku (2009) afirma: “Esto significa que, en cierto sentido, lo que nos ocurre 
+a nosotros afecta de manera instantánea a cosas en lejanos confines del 
+universo, (...). En cierto sentido hay una madeja de entrelazamiento que 
+co- necta confines lejanos del universo, incluyéndonos a nosotros” (p.90).
+----------
+REFERENCIA 
+----------
+
+Damasio, A. (2000). Sentir lo que sucede: cuerpo y emoción en la fábrica 
+de la consciencia. Santiago de Chile: Editorial Andrés Bello.
+
+Apellido, A. A. (año, mes, día). Título del artículo. Nombre de la revista.  Recuperado de http://www.semana.com/
+
+Apellido, A. A. (Fecha). Título de la página. Lugar de publicación: Casa publicadora. dirección de donde se extrajo el documento (URL).
+
+Argosy Medical Animation. (2007-2009). Visible body: Discover human anatomy. New York, EU.: Argosy Publishing. Recuperado de http://www.visiblebody.com
+-----------------------------------------------------------------------------------
+
+1) Cita de + 40 pal
+
+REF: Monsó, J. (1994). Sistemas de identificación y control automáticos (II)
+Barcelona: Editorial Marcombo S.A.
+
+https://books.google.com.co/books?id=nGgmObQH2r0C&pg=PA157&dq=tarjetas+inteligentes&hl=es&sa=X&ved=0CC4Q6AEwAWoVChMIq6OYm4zoxwIVxO0eCh2Fygqz#v=onepage&q=tarjetas%20inteligentes&f=false
+
+2) Cita de - 40 pal basada en el autor
+
+https://josemarianomartinez09.files.wordpress.com/2014/07/aprenda-visual-basic-practicando.pdf
+
+REF: Ramírez, J. (2001). Aprenda Visual Basic practicando. México: Editorial Prentice Hall
+
+3) Cita de - 40 pal basada en el autor 
+
+REF: Moliner, F. (2005). Grupos A y B de Informática Bloque Específico. Valencia: Editorial Mad, S.L. 
+
+https://books.google.com.co/books?id=dGcCwEEJdjEC&pg=PA71&dq=metodologia+M%C3%89TRICA+V3&hl=es&sa=X&ved=0CCUQ6AEwAmoVChMIjM34uKjoxwIVyo4NCh2_tA8I#v=onepage&q=metodologia%20M%C3%89TRICA%20V3&f=false
+
+4) Cita de cita
+
+Pinto, D. (2009, Agosto). Lo nuevo en identificacion humana: Uso de la biometria se 
+acelerará en corto plazo. InfoWeek.  Recuperado de http://www.infoweek.biz/
+
+5) Cita de -40 pal basada texto
+
+https://books.google.com.co/books?id=-9q8MV_4pXcC&pg=PA50&dq=mejora+continua+phva&hl=es&sa=X&ved=0CBsQ6AEwAGoVChMIp735vvnpxwIVSVoeCh0BqAUb#v=onepage&q=mejora%20continua%20phva&f=false
+
+REF: Pérez, P., Múnera, F. (2007).Reflexiones para implementar un sistema de gestion de la calidad
+(ISO 9001:2000) en cooperativas y empresas de economia solidaria. Bogotá: Editorial eduCC.
+
+6) Cita de + de 40
+
+http://ufdcimages.uflib.ufl.edu/UF/00/07/75/34/00001/s_IPRPrimer.pdf
+
+REF: Longhorn, R., Henson-Apollonio, V., White, J. (2002). Aspectos jurídico-legales
+del uso de datos y herramientas geoespaciales en la agricultura y en el manejo de los recursos
+naturales. Manual de conceptos básicos. México, D.F.: Editorial CIMMYT.
+
+7) Cita de - 40 pal
+
+https://books.google.com.co/books?id=xBP7w6UdT8wC&pg=PA21&dq=lenguaje+de+marcado+pdf&hl=es&sa=X&ved=0CDMQ6AEwBWoVChMIsJ3hnsXqxwIVgqUeCh01pAhK#v=onepage&q=lenguaje%20de%20marcado%20pdf&f=false 
+
+REF: Lara, P., Mártinez, J. (2006). La organización del conocimiento en Internet. Barcelona: Editorial UOC.
+
+8) 
+
+http://www.glidea.com.ar/blog/balsamiq-mockups-una-herramienta-para-realizar-wireframes
+
+REF: Guerrera, J. (2011). Balsamiq Mockups, una herramienta para realizar Wireframes. Recuperado de http://www.glidea.com.ar/blog/balsamiq-mockups-una-herramienta-para-realizar-wireframes
+
+
+9) Cita de + de 40 pal
+
+REF: Castillo, L. (2012). Conociendo GitHub. Recuperado de https://conociendogithub.readthedocs.org/en/latest/data/introduccion/
+
+10) Cita de - 40 pal
+
+https://books.google.com.co/books?id=cITcVDjY6e8C&pg=PA35&dq=MySQL+Workbench+definicion&hl=es&sa=X&ved=0CBsQ6AEwAGoVChMIsZ6ro4ntxwIVBXceCh2eoguq#v=onepage&q=MySQL%20Workbench%20definicion&f=false
+
+REF: Jaque, M. (2007). Manual de Supervivencia del Administrador de MySQL. 
+
+11) Cita de + de 40
+
+https://books.google.com.co/books?id=hbOTo05ddxAC&pg=PR9&dq=Qu%C3%A9+es+el+modelo+entidad+relaci%C3%B3n&hl=es&sa=X&ved=0CBwQ6AEwAGoVChMI8an9jaXtxwIVhaceCh2zpQh1#v=onepage&q=Qu%C3%A9%20es%20el%20modelo%20entidad%20relaci%C3%B3n&f=false
+
+
+REF: Barker, R. (1990). Case*Method, Entity Relationship Modelling Versión en español. Massachutsetts, E.U: Addison-Wesley Iberoamericana S.A.
+
+12) Cita de - 40 apl
+
+http://www.v-espino.com/~chema/daw1/tutoriales/SQLServer.pdf
+
+
+13) 
+
+
+Giardina, F. (2010, Diciembre, 14). Tutorial de desarrollo web con ASP.NET. Maestros del web.  Recuperado de http://www.maestrosdelweb.com/tutoria-desarrolloweb-asp-net/
+
+14) 
+
+https://msdn.microsoft.com/es-es/library/dd537667(v=vs.100).aspx
+
+REF: Microsoft. (2015). Visual Web Developer Express. Recuperado de https://msdn.microsoft.com/es-es/library/dd537667(v=vs.100).aspx
+
+15) 
+
+Microsoft. (2015). Visual Web Developer Express.  Recuperado de https://msdn.microsoft.com/es-es/library/ms349441(v=vs.100).aspx
+
+----------
+PREGUNTAS:
+----------
+
+-Los nombres de los autores van completos en las referencias?
+-
+
+
+
+
+
+
