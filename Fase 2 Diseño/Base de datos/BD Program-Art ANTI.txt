@@ -1,0 +1,146 @@
+create database Program_Art;
+use Program_Art;
+
+create table Programa
+(
+Id_Programa numeric(10) Primary key,
+Nombre_Programa varchar(50)not null,
+Desc_Programa varchar(50),
+)
+
+create table Centro
+(
+Id_Centro numeric(4) Primary key,
+Nombre_Centro varchar(30)not null,
+Direccion_Centro Varchar(30)not null,
+)
+
+create table Torre
+(
+Id_Torre numeric(3) Primary key,
+Nombre_Torre varchar(30)not null,
+)
+
+//tabla relacion de muchos a muchos Centro y torre
+create table Centro_Has_Torre
+(
+Id_Centro numeric(4) references Centro(Id_Centro),
+Id_Torre numeric(3) references Torre(Id_Torre),
+)
+
+create table Ambiente
+(
+Id_Ambiente numeric(4) Primary key,
+Desc_Ambiente varchar(50),
+Id_Torre numeric(3) references Torre(Id_Torre),
+)
+
+create table Horario
+(
+Id_Horario numeric(4) Primary key,
+Nombre_Horario varchar(15)not null,
+Trimestre varchar(15)not null,
+Ini_Trimestre date,
+Fin_Trimestre date,
+)
+
+create table Ficha
+(
+Id_Ficha numeric(10) Primary key,
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Horario numeric(4) references Horario(Id_Horario),
+)
+
+//tabla relacion de muchos a muchos Ficha y Ambiente
+create table Ficha_Has_Ambiente
+(
+Id_Ficha numeric(10) references Ficha(Id_Ficha),
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Horario numeric(4) references Horario(Id_Horario),
+Id_Ambiente numeric(4) references Ambiente(Id_Ambiente),
+Id_Torre numeric(3) references Torre(Id_Torre),
+)
+
+create table Aprendiz
+(
+Id_Aprendiz numeric(12) Primary key,
+Nombres_Aprendiz varchar(40) not null,
+Apellidos_Aprendiz varchar(40) not null,
+Telefonos_Aprendiz varchar(25)null,
+Correo_Aprendiz varchar(50) not null,
+Direccion_Aprendiz varchar (50) not null,
+)
+
+//tabla relacion de muchos a muchos Ficha y Aprendiz
+create table Ficha_has_Aprendiz
+(
+Id_Ficha numeric(10) references Ficha(Id_Ficha),
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Aprendiz numeric(12) references Aprendiz(Id_Aprendiz),
+)
+
+create table Instructor
+(
+Id_Instructor numeric(12) Primary key,
+Nombres_Instructor varchar(40) not null,
+Apellidos_Instructor varchar(40) not null,
+Titulo_Instructor varchar(50) not null,
+Telefonos_Intructor varchar(25) not null,
+Correo_Instructor varchar(50) not null,
+Direccion_Instrcutor varchar (50) not null,
+)
+
+create table Administrador
+(
+Id_Administrador numeric(12) Primary key,
+Nombres_Administrador varchar(40) not null,
+Apellidos_Administrador varchar(40) not null,
+Telefonos_Administrador varchar(25) not null,
+Correo_Administrador varchar(50) not null,
+Direccion_Administrador varchar(50) not null,
+Id_Instructor int references Instructor(Id_Instructor),
+)
+
+//tabla relacion de muchos a muchos Instructor y Ficha
+create table Instructor_Has_Ficha
+(
+Id_Instructor numeric(12) references Instructor(Id_Instructor),
+Id_Ficha numeric(10) references Ficha(Id_Ficha),
+)
+
+CREATE PROCEDURE sp_Agregar_Aprendiz 
+	@Id_Aprendiz numeric(12),
+	@Nombres_Aprendiz varchar(40),
+	@Apellidos_Aprendiz varchar(40),
+	@Telefonos_Aprendiz varchar(25),
+	@Correo_Aprendiz varchar(50),
+	@Direccion_Aprendiz varchar(50)
+AS
+BEGIN
+	Insert into Aprendiz
+	values (@Id_Aprendiz,@Nombres_Aprendiz,@Apellidos_Aprendiz,@Telefonos_Aprendiz,@Correo_Aprendiz,@Direccion_Aprendiz)
+ END
+ 
+ execute sp_Agregar_Aprendiz 1030649699, 'Andres Felipe', 'Orjuela Romero', 'aforjuela99@misena.edu.co', '4118251-3108712217', 'Cra 80 a # 2 - 42'
+ execute sp_Agregar_Aprendiz 1014249472, 'Aldair Jhoao', 'Diaz Gomez','dajdiaz274@misena.edu.co', 3202049945, 'Trv 28 # 36-44'
+ execute sp_Agregar_Aprendiz 1010023060, 'Arlinson Esneider', 'Rojas Luna', 'aerojas06@misena.edu.co', 3163501706, 'Cll 34a Sur # 13b - 44'
+ execute sp_Agregar_Aprendiz 1019128133, 'Camilo Alejandro', 'Lesmes Leguizamo', 'calesmes1@misena.edu.co', 3212943770, 'Cra 103 # 127 - 35'
+ execute sp_Agregar_Aprendiz 1030659743, 'Cindy Jineth', 'Saldaña Guitierrez', 'cjsaldana@misena.edu.co', 3143543939, 'Cra 74d # 75b - 78'
+ execute sp_Agregar_Aprendiz 1018487375, 'Diana Carolina', 'Aguirre Arias', 'dcaguirre8@misena.edu.co', 3112242398, 'Cra 72 j # 42 - 12'
+ execute sp_Agregar_Aprendiz 1023928906, 'Jefferson Javier', 'Castro Cardenas', 'jjcastro60@misena.edu.co', '3616882 - 3138057223', 'Cra 7a # 35-16 Sur'
+ execute sp_Agregar_Aprendiz 53075859, 'Jennifer Andrea', 'Romani Jamaica', 'jaromani@misena.edu.co', '3052548 - 3213741669', 'Cll 1 # b # 35 - a 17'
+ execute sp_Agregar_Aprendiz 1022424784, 'Jessica Natalia', 'Pulido Leon', 'jnpulido6@misena.edu.co', 3125732265, 'Cll 6c # 69c - 34'
+ execute sp_Agregar_Aprendiz 1022425510, 'Jhoan Javier', 'Ayala Cortes', 'jjayalac@misena.edu.co', '2041157 - 3134496283', 'Trv 68h #38-06 sur'
+ execute sp_Agregar_Aprendiz 1033795333, 'Jhon Stwar', 'Valero Ovalle', 'stwarvalero@misena.edu.co', '7677625 - 3118143689', 'Cll 49 b bbis # 2 b 67 Sur'
+ execute sp_Agregar_Aprendiz 1015463916, 'Jose David', 'Mejia Guzman', 'jdmejia629@misena.edu.co', '2406600-3143912908', 'Cll 66 A # 68 F - 12'		
+ execute sp_Agregar_Aprendiz 1032490027, 'Juan David', 'Saboya Jimenez', 'jdsaboya@misena.edu.co', '4025459 - 3115952183', 'Dg 73 f sur # 78 i 77'		
+ execute sp_Agregar_Aprendiz 1032487271, 'Juan Sebastian', 'Aponte Peña', 'jsaponte10@misena.edu.co', 7967462, 'Cra 90 a # 45a - 05 Sur'
+ execute sp_Agregar_Aprendiz 1030675024, 'Kevin Steven', 'Garzon Caballero', 'ksgarzonc@misena.edu.co', '7244429-3219333417', 'Trv 68 j # 39 A 41 Sur'
+ execute sp_Agregar_Aprendiz 1019114826, 'Mary Johanna', 'Bautista Guerrero', 'mjbautista6@misena.edu.co', '6834573 - 3124725147', 'Cll 129 No 89 - 26'	
+ execute sp_Agregar_Aprendiz 1023018948, 'Miguel Angel', 'Serrato Farias', 'macerrato@misena.edu.co', '7623984-3134780136', 'Cra 3 este # 88-16 Sur'
+ execute sp_Agregar_Aprendiz 1023017687, 'Randy Stewart', 'Ortega Mahecha',	'rsortega0@misena.edu.co', '7627035-3133346292', 'Cra 5 # 100a - 07 Sur'
+ execute sp_Agregar_Aprendiz 1099212693, 'Yeison Fernando', 'Loaiza Ruiz', 'yfloaiza3@misena.edu.co', 3144105636, 'Cra 25 # 25-70'		
+ execute sp_Agregar_Aprendiz 97020307289, 'Nelson David', 'Carrillo Ochoa', 'david8A@misena.edu.co', '7815377-3008647147', 'Cll 5 c Sur # 17- 72'
+ execute sp_Agregar_Aprendiz 97032407823, 'Sebastian', 'Avila Maldonado', 's.a.maldonado@misena.edo.co', '6949815 - 3112637842', 'Cra 100a # 73 - 46'
+
+ 

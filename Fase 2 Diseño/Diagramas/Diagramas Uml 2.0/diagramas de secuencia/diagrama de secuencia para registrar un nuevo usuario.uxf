@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>14</zoom_level>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>392</x>
+      <y>28</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Registrar usuario</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>504</x>
+      <y>112</y>
+      <w>140</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>_:Interfaz_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>532</x>
+      <y>112</y>
+      <w>70</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>0</x>
+      <y>70</y>
+      <w>140</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Administrador</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.SeqObjectActive</type>
+    <coordinates>
+      <x>560</x>
+      <y>210</y>
+      <w>28</w>
+      <h>518</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>154</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Seleccionar opción de nuevo usuario</panel_attributes>
+    <additional_attributes>518;56;42;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.SeqObjectActive</type>
+    <coordinates>
+      <x>56</x>
+      <y>210</y>
+      <w>28</w>
+      <h>518</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>28</x>
+      <y>126</y>
+      <w>70</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;84</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>770</x>
+      <y>112</y>
+      <w>140</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>_:Usuario B. D._</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>238</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Solicitar tipo de usuarios</panel_attributes>
+    <additional_attributes>42;56;518;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.SeqObjectActive</type>
+    <coordinates>
+      <x>826</x>
+      <y>630</y>
+      <w>28</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>798</x>
+      <y>112</y>
+      <w>70</w>
+      <h>546</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;518</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>280</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Seleccionar tipo de usuario</panel_attributes>
+    <additional_attributes>518;56;42;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>28</x>
+      <y>686</y>
+      <w>70</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>532</x>
+      <y>686</y>
+      <w>70</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>378</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Havilitar campos correspondientes al usuario seleccionado</panel_attributes>
+    <additional_attributes>42;56;518;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>420</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Digitar datos requeridos en el formulario</panel_attributes>
+    <additional_attributes>518;56;42;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>322</y>
+      <w>210</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Validar opción</panel_attributes>
+    <additional_attributes>182;84;98;84;98;42;182;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>462</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Dar clic en el botón guardar fornulario</panel_attributes>
+    <additional_attributes>518;56;42;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>504</y>
+      <w>210</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Validar campos</panel_attributes>
+    <additional_attributes>182;84;98;84;98;42;182;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>546</x>
+      <y>574</y>
+      <w>308</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Registrar nuevo </panel_attributes>
+    <additional_attributes>280;56;42;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>616</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Mostrar mensaje de registro satisfactorio</panel_attributes>
+    <additional_attributes>42;56;518;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>798</x>
+      <y>616</y>
+      <w>70</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>42;42;42;182</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>658</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Devolver a la pantalla de registro</panel_attributes>
+    <additional_attributes>42;56;518;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>196</y>
+      <w>546</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;
+Mostrar mostrar formulario de registro</panel_attributes>
+    <additional_attributes>42;56;518;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.SeqDestroyMark</type>
+    <coordinates>
+      <x>56</x>
+      <y>784</y>
+      <w>28</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>938</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>System</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

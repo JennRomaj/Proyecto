@@ -1,0 +1,104 @@
+create database Program_Art;
+use Program_Art;
+
+create table Programa
+(
+Id_Programa numeric(10) Primary key,
+Nombre_Programa varchar(50) not null,
+Desc_Programa varchar(50) not null,
+)
+
+create table Centro
+(
+Id_Centro numeric(4) Primary key,
+Nombre_Centro varchar(50) not null,
+Direccion_Centro varchar(50) not null,
+)
+
+create table Torre
+(
+Id_Torre numeric(3) Primary key,
+Nombre_Torre varchar(30) not null,
+)
+
+---Tabla relación muchos a muchos Centro y Torre
+
+create table Centro_Has_Torre
+(
+Id_Centro_Torre numeric(3) Primary key,
+Id_Centro numeric(4) references Centro(Id_Centro),
+Id_Torre numeric(3) references Torre(Id_Torre),
+)
+
+create table Ambiente
+(
+Id_Ambiente numeric(4) Primary key,
+Desc_Ambiente varchar(50) not null,
+Id_Torre numeric(3) references Torre(Id_Torre), 
+)
+
+create table Horario
+(
+Id_Horario numeric(4) Primary key,
+Nombre_Horario varchar(15) not null,
+Trimestre varchar(15) not null,
+Ini_Trimestre date not null,
+Fin_Trimestre date not null,
+)
+
+create table Ficha
+(
+Id_Ficha numeric(10) Primary key,
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Horario numeric(4) references Horario(Id_Horario), 
+)
+
+---Tabla relación muchos a muchos Ficha y Ambiente
+
+create table Ficha_Has_Ambiente
+(
+Id_Ficha_Amb numeric(10) Primary key,
+Id_Ficha numeric(10) references Ficha(Id_Ficha),
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Horario numeric(4) references Horario(Id_Horario),
+Id_Ambiente numeric(4) references Ambiente(Id_Ambiente),
+Id_Torre numeric(3) references Torre(Id_Torre),
+)
+
+create table Usuario
+(
+Id_Usuario numeric(25) Primary key,
+Tipo_Documento varchar(20) not null,
+Nombre_Usuario varchar(50) not null,
+Apellidos_Usuario varchar(50) not null,
+Correo_Usuario varchar(50) not null,
+Telefono_Usuario varchar(30) not null,
+Contraseña_Usuario varchar(20) not null
+)
+
+---Tabla relación muchos a muchos Ficha y Usuario
+
+create table Ficha_has_Usuario
+(
+Id_Ficha_Usu numeric(5) Primary key,
+Id_Ficha numeric(10) references Ficha(Id_Ficha),
+Id_Programa numeric(10) references Programa(Id_Programa),
+Id_Horario numeric(4) references Horario(Id_Horario), 
+Id_Usuario numeric(25) references Usuario(Id_Usuario),
+)
+
+create table Tipo_Usuario
+(
+Id_Tipo numeric(2),
+Desc_Tipo_Usu varchar(50) null,
+Id_Usuario numeric(25) references Usuario (Id_Usuario),
+primary key (Id_Tipo,Id_Usuario)
+)
+
+create table Registro
+(
+Id_Registro int identity (001,1)Primary key, --identity para crear un autonumerico
+Fecha_Registro date not null,
+Asistencia bit not null, -- Bit es el tipo de dato booleano
+Id_Usuario numeric(25) references Usuario (Id_Usuario)
+)

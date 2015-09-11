@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>270</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:administrador_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>160</x>
+      <y>270</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:Interfaz_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>130</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;140;180;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>240</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>30;30;200;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>140</y>
+      <w>170</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;</panel_attributes>
+    <additional_attributes>30;120;150;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>260</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>200;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>310</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>2. mostrar tipos de usuarios
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>450</x>
+      <y>360</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>3. seleccionar usuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>350</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>4. Validar opción
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>270</x>
+      <y>20</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>CONSULTAR USUARIO
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>450</x>
+      <y>310</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>1. Seleccionar la opción de
+    consultar usuario
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>450</x>
+      <y>440</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>8. ingresar numero de documento
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>490</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>12. Validar campo
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>310</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:B. D. usuario_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>230</x>
+      <y>250</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;220;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>440</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>6. solicitar numero de 
+    documento del usuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>450</x>
+      <y>480</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>9. Dar clic en aceptar
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>20</x>
+      <y>190</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>11. consultar datos de usuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>530</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>13. mostrar datos de usuario, registrados
+      y actualizados a la fecha
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>690</w>
+      <h>590</h>
+    </coordinates>
+    <panel_attributes>System</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>160</x>
+      <y>390</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>5. solicitar tipo de 
+    documento del usuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>450</x>
+      <y>400</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>7. Seleccionar tipo de documento
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

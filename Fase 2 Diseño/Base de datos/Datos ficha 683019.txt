@@ -1,0 +1,69 @@
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1030649699, 'Andres Felipe', 'Orjuela Romero', 'aforjuela99@misena.edu.co', 4118251-3108712217, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_NN.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1014249472, 'Aldair Jhoao', 'Diaz Gomez', 'dajdiaz274@misena.edu.co', 3202049945, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Diaz.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1010023060, 'Arlinson Esneider', 'Rojas Luna', 'aerojas06@misena.edu.co', 3163501706, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Rojas.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1010023060, 'Arlinson Esneider', 'Rojas Luna', 'aerojas06@misena.edu.co', 3163501706, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Rojas.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1019128133, 'Camilo Alejandro', 'Lesmes Leguizamo', 'calesmes1@misena.edu.co', 3212943770, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Lesmes.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1030659743, 'Cindy Jineth', 'Saldaña Guitierrez', 'cjsaldana@misena.edu.co', 3143543939, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_NN.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1018487375, 'Diana Carolina', 'Aguirre Arias', 'dcaguirre8@misena.edu.co', 3112242398, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Aguirre.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(53075859, 'Jennifer Andrea', 'Romani Jamaica', 'jaromani@misena.edu.co', 3213741669, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Romani.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1022424784, 'Jessica Natalia', 'Pulido Leon', 'jnpulido6@misena.edu.co', 3125732265, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Pulido.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1022425510, 'Jhoan Javier', 'Ayala Cortes', 'jjayalac@misena.edu.co', 2041157-3134496283, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Ayala.jpg' , SINGLE_BLOB) as T1),12345) 
+ 
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1033795333, 'Jhon Stwar', 'Valero Ovalle', 'stwarvalero@misena.edu.co', 7677625-3118143689, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Valero.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1015463916, 'Jose David', 'Mejia Guzman', 'jdmejia629@misena.edu.co', 2406600-3143912908, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Mejia.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1032490027, 'Juan David', 'Saboya Jimenez', 'jdsaboya@misena.edu.co', 4025459-3115952183, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Saboya.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1032487271, 'Juan Sebastian', 'Aponte Peña', 'jsaponte10@misena.edu.co', 7967462, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_NN.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1030675024, 'Kevin Steven', 'Garzon Caballero', 'ksgarzonc@misena.edu.co', 7244429-3219333417, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Garzon.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1019114826, 'Mary Johanna', 'Bautista Guerrero', 'mjbautista6@misena.edu.co', 6834573-3124725147, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Bautista.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1023018948, 'Mary Johanna', 'Bautista Guerrero', 'mjbautista6@misena.edu.co', 6834573 - 3124725147, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Bautista.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1023018948, 'Miguel Angel', 'Serrato Farias', 'macerrato@misena.edu.co', 7623984-3134780136, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_NN.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1023017687, 'Randy Stewart', 'Ortega Mahecha', 'rsortega0@misena.edu.co', 7627035-3133346292, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Ortega.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(1099212693, 'Yeison Fernando', 'Loaiza Ruiz', 'yfloaiza3@misena.edu.co', 3144105636, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Loaiza.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(97020307289, 'Nelson David', 'Carrillo Ochoa', 'david8a@misena.edu.co', 7815377-3008647147, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Carrillo.jpg' , SINGLE_BLOB) as T1),12345) 
+
+INSERT INTO Usuario(Id_Usuario,Nombre_Usuario,Apellidos_Usuario,Correo_Usuario,Telefono_Usuario,Foto_Usuario,Contraseña_Usuario)
+values(97032407823, 'Sebastian', 'Avila Maldonado', 's.a.maldonado@misena.edo.co', 6949815-3112637842, (SELECT * FROM OPENROWSET(BULK N'C:\Img\IMG_Avila.jpg' , SINGLE_BLOB) as T1),12345) 		
+
+
+
+

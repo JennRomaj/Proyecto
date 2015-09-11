@@ -1,0 +1,229 @@
+create database Proyecto;
+use Proyecto;
+
+create table Trimestre
+(
+Id_Trimestre numeric Primary key,
+Fecha_Inicio date not null,
+Fecha_Final date not null,
+)
+
+create table Programa
+(
+Id_Programa numeric Primary key,
+Nombre_Programa char (30) not null,
+Descripcion_Programa varchar (60) not null,
+)
+
+create table Centro
+(
+Id_Centro numeric Primary key,
+Direccion_Centro varchar (30) not  null,
+Formacion_Centro varchar (30) not null,
+Id_Programa numeric references Programa(Id_Programa)
+)
+
+create table Torre
+(
+Id_torre numeric Primary key,
+Piso_torre numeric (2) not null,
+Id_centro numeric references Centro(Id_Centro)
+)
+
+create table Ambiente
+(
+Id_Ambiente numeric Primary key,
+Descripcion_Ambiente char (15) null,
+Id_Torre numeric references Torre(Id_Torre)
+)
+
+create table Horario
+(
+Id_Horario numeric Primary key,
+Horario_Diurno varchar (30) not null,
+Horario_Nocturno varchar  (30) not null,
+Horario_Fin_de_Semana varchar (30) not null,
+Id_Trimestre numeric references Trimestre(Id_Trimestre),
+Id_Ambiente numeric references Ambiente(Id_Ambiente)
+)
+
+create table Dia
+(
+Id_Dia numeric Primary key,
+Descripcion_Dia char (10) not null,
+Id_Horario numeric references Horario(Id_horario)
+)
+
+create table Ficha
+(
+Id_Ficha numeric Primary key,
+Nombre_Programa varchar (50) not null,
+Horario_Ficha date not null,
+Id_Centro numeric references Centro(Id_Centro),
+Id_Horario numeric references Horario(Id_horario),
+Id_Ambiente numeric references Ambiente(Id_Ambiente),
+Id_Programa numeric references Programa(Id_Programa)
+)
+
+create table Instructor
+(
+Id_Instructor numeric Primary key,
+Nombre_Instructor varchar (30) not null,
+Apellidos_Instructor varchar (30) not null,
+Correo_Instructor char (30) not null,
+Telefono_Instrcutor numeric (10) null,
+Id_Ficha numeric references Ficha(Id_Ficha)
+) 
+
+create table Aprendiz
+(
+Id_Aprendiz numeric Primary key,
+Nombre_Aprendiz varchar (30) not null,
+Apellidos_Aprendiz varchar (30) not null,
+Correo_Aprendiz char (30) not null,
+Telefono_Aprendiz numeric (10) null,
+Acudiente_Aprendiz varchar (50) null,
+Id_Ficha numeric references Ficha(Id_Ficha),
+Id_Instructor numeric references Instructor(Id_Instructor),
+Id_Horario numeric references Horario(Id_horario)
+) 
+
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (52833695,'Marina', 'Casallas Silva', 'marinacasallas@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (51235698,'Oscar Ivan', 'Benavides Campos', 'oscarbenavides@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (53562547,'Jimmy Daniel', 'Gamba Casallas', 'danielgamba@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (80236547,'Jorge Enrique', 'Prieto Diaz', 'jorgeprieto@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+ values (52855444,'Zulma Angelica', 'Espinel Saenz', 'zulmaespinel@misena.edu.co') 
+
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (1012365478,'Diana Carolina', 'Aguirre Arias', 'dianarias@misena.edu.co', 683019) 
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (1012654236,'Mary Johana', 'Bautista', 'johanabautista@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (53075859,'Jennifer Andrea', 'Romani Jamaica', 'jenniferomani@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (101236547, 'Brayan Arley', 'Romero Sanabria', 'brayanromero@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (101234569, 'Juan David', 'Saboya Jimenez', 'juansaboya@misena.edu.co', 683019)
+
+
+ insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (309,'Sala sistemas 1', 'Occidental', 'Diseño y Metrologia') 
+
+ insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (310,'Sala sistemas 2', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (308,'Sala sistemas 3', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (300, null, 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (305, null, 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (309,'Sala sistemas 1', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (68301,'Analisis y desarrollo de sistemas') 
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (683020,'Tecnólogo en Gestión del Ciclo de Vida')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (646041,'Tecnólogo en Aseguramiento Metrológico')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (656361,'Tecnólogo en Desarrollo y Adaptación')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (684413,'Tecnólogo en Sistemas Mecánicos')
+
+
+Select * from Instructor;
+Select Id_Instructor from Instructor;
+Select Nombre_Instructor from Instructor;
+Select Apellidos_Instructor from Instructor;
+Select Correo_Instructor from Instructor;
+
+
+Select Id_Instructor, Apellidos_Instructor from Instructor;
+Select Nombre_Instructor, Correo_Instructor from Instructor;
+Select Id_Instructor, Nombre_Instructor, Apellidos_Instructor from Instructor;
+
+
+Select * from Aprendiz;
+Select Id_Aprendiz from Aprendiz;
+Select Nombre_Aprendiz from Aprendiz;
+Select Apellido_Aprendiz from Aprendiz;
+Select Correo_Aprendiz from Aprendiz;
+Select Ficha_Aprendiz from Aprendiz;
+
+
+Select * form Programa;
+Select Id_Programa from Programa;
+Select Nombre_Programa from Programa;
+Select Descripcion_Programa from Programa;
+
+
+Select * from Centro;
+Select Id_Centro from Centro;
+Select Direccion_Centro from Centro;
+Select Formacion_Centro from Centro;
+Select Id_Programacion from Centro;
+
+
+Select * from Torre;
+Select Id_Torre from Torre;
+Select Piso_Torre from Torre;
+Select Id_Centro from Torre;
+
+
+Select * from Horario;
+Select Id_Horario from Horario;
+Select Horario_Diurno from Horario;
+Select Horario_Nocturno from Horario;
+Select Horario_Fin_de_semana from Horario;
+Select Id_Trimestre from Horario;
+Select Id_Ambiente from Horario;
+
+
+Select * from Dia;
+Select Id_Dia from Dia;
+Select Descripcion_Dia from Dia;
+Select Id_Horario from Dia;
+
+
+Select * from Ambiente;
+Select Id_Ambiente from Ambiente;
+Select Nombre_Ambiente from Ambiente;
+Select Torre from Ambiente;
+Select Centro from Ambiente;
+
+
+Select * from Ficha;
+Select Id_Ficha from Ficha;
+Select Nombre_Programa from Ficha;
+Select Horario_Ficha from Ficha;
+Select Id_Centro from Ficha;
+select Id_Horario from Ficha;
+Select Id_Ambiente from Ficha;
+Select Id_Programa from Ficha;
+
+
+

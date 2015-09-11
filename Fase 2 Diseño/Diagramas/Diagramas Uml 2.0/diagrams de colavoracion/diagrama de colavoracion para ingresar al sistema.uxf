@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>320</x>
+      <y>180</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:usuario_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>180</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:Interfaz_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>150</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>220;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>260</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>3. Solicitar contraseña
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>180</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>1. Seleccionar tipo de isuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>170</x>
+      <y>90</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>INGRESAR AL SISTEMA
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>220</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>2. Solicitar usuario y contraseña
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>220</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>3. Ingresar nombre de usuario
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>160</y>
+      <w>260</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;240;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>170</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;</panel_attributes>
+    <additional_attributes>220;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>300</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>6. Validar datos
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>260</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>4. Ingresar contraseña
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>340</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>7. Permitir acceso
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>300</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>5. Dar clic en iniciar sesión
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>80</y>
+      <w>650</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>System</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

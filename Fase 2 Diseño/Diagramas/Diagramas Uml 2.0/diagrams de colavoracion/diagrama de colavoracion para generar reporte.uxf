@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>320</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:instructor_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:Interfaz_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>100</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>220;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>220</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>3. Solicitar fecha
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>130</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>1. Seleccionar la opción 
+    de generar reporte
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>260</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>4. Solicitar hora 
+    de formación
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>230</x>
+      <y>40</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GENERAR REPORTE
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>180</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>2. Solicitar ficha
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>130</y>
+      <w>180</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>160;180;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>200</x>
+      <y>310</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:B. D. Aprendiz_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>130</y>
+      <w>170</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;</panel_attributes>
+    <additional_attributes>30;30;150;170</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>180</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>5. Ingresar ficha
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>110</y>
+      <w>260</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;240;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>120</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;</panel_attributes>
+    <additional_attributes>220;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>220</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>6. Ingresar fecha
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>260</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>7. Ingresar hora
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>300</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>8. Dar clic en el boton de 
+    generar reporte
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>400</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>11. Solicitar tipo de archivo 
+      para la descarga
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>400</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>14. Dar clic en aceptar
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>500</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>15. Descargar archivo
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>310</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>9. Validar campos
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>350</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>10. Consultar estado de 
+      los aprendices
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>30</y>
+      <w>620</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes>System</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>10</x>
+      <y>450</y>
+      <w>200</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>13. Mostrar mensaje de 
+      confirmación de descarga
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>430</x>
+      <y>350</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>12. seleccionar tipo 
+      de archivo
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

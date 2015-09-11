@@ -1,0 +1,102 @@
+create database Proyecto;
+use Proyecto;
+
+create table Instructor
+(
+Id_Instructor numeric (15) Primary key,
+Nombre_Instructor varchar (30) not null,
+Apellidos_Instructor varchar (30) not null,
+Correo_Instructor char (30) not null
+) 
+
+create table Aprendiz
+(
+Id_Aprendiz numeric (15) Primary key,
+Nombre_Aprendiz varchar (30) not null,
+Apellidos_Aprendiz varchar (30) not null,
+Correo_Aprendiz char (30) not null,
+Ficha_Aprendiz int not null,
+) 
+
+create table Ambiente
+(
+Id_Ambiente numeric (3) Primary key,
+Nombre_Ambiente char (15) null,
+Torre varchar (20) not null,
+Centro varchar (20) not null,
+)
+
+create table Ficha
+(
+Id_Ficha numeric Primary key,
+Nombre_Programa varchar (50) not null,
+)
+
+
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (52833695,'Marina', 'Casallas Silva', 'marinacasallas@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (51235698,'Oscar Ivan', 'Benavides Campos', 'oscarbenavides@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (53562547,'Jimmy Daniel', 'Gamba Casallas', 'danielgamba@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+  values (80236547,'Jorge Enrique', 'Prieto Diaz', 'jorgeprieto@misena.edu.co') 
+
+insert into Instructor (Id_Instructor, Nombre_Instructor, Apellidos_Instructor, Correo_Instructor)
+ values (52855444,'Zulma Angelica', 'Espinel Saenz', 'zulmaespinel@misena.edu.co') 
+
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (1012365478,'Diana Carolina', 'Aguirre Arias', 'dianarias@misena.edu.co', 683019) 
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (1012654236,'Mary Johana', 'Bautista', 'johanabautista@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (53075859,'Jennifer Andrea', 'Romani Jamaica', 'jenniferomani@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (101236547, 'Brayan Arley', 'Romero Sanabria', 'brayanromero@misena.edu.co', 683019)
+
+ insert into Aprendiz (Id_Aprendiz, Nombre_Aprendiz, Apellidos_Aprendiz, Correo_Aprendiz, Ficha_Aprendiz)
+ values (101234569, 'Juan David', 'Saboya Jimenez', 'juansaboya@misena.edu.co', 683019)
+
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (309,'Sala sistemas 1', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (310,'Sala sistemas 2', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (308,'Sala sistemas 3', 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (300, null, 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (305, null, 'Occidental', 'Diseño y Metrologia') 
+
+insert into Ambiente (Id_Ambiente, Nombre_Ambiente, Torre, Centro)
+  values (309,'Sala sistemas 1', 'Occidental', 'Diseño y Metrologia') 
+
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (683019,'Analisis y desarrollo de sistemas') 
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (683020,'Tecnólogo en Gestión del Ciclo de Vida')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (646041,'Tecnólogo en Aseguramiento Metrológico')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (656361,'Tecnólogo en Desarrollo y Adaptación')
+
+insert into Ficha (Id_Ficha, Nombre_Programa)
+  values (684413,'Tecnólogo en Sistemas Mecánicos')
+

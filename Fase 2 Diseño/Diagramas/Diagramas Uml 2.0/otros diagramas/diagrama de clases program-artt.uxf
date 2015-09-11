@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>600</x>
+      <y>516</y>
+      <w>138</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>Aprendiz
+--
+id_aprendiz:int (15) primary key
+nombre_aprendiz:varchar (30)
+apellidos_aprendiz:varchar (30)
+telefono_aprendiz:Int
+correo_aprendiz:varchar (30)
+--
+modificar_contraseña  ()
+generar_reporte ()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>606</x>
+      <y>420</y>
+      <w>120</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Ficha_Aprendiz
+--
+id_ficha: Int (8)
+id_aprendiz:int (15)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>648</x>
+      <y>354</y>
+      <w>30</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0.n
+m2=0.1
+</panel_attributes>
+    <additional_attributes>18;66;18;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>648</x>
+      <y>438</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0.n
+m2=0.1
+</panel_attributes>
+    <additional_attributes>18;18;18;78</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>366</x>
+      <y>30</y>
+      <w>120</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Centro
+--
+id_centro:int (2) primary key
+nombre_centro:varchar (30)
+direcion_centro:varchar (30)
+id_torre:int (2) primary key
+--
+modificar_torre  ()
+eliminar_torre ()
+crear_torre ()
+consultar_torre ()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>468</x>
+      <y>18</y>
+      <w>144</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;132;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>600</x>
+      <y>30</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Torre
+--
+id_torre:int (2) primary key
+nombre_torre:varchar (30)
+id_ambiente:int (4) primary key
+--
+modificar_ambiente  ()
+eliminar_ambiente ()
+crear_ambiente ()
+consultar_ambiente ()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>822</x>
+      <y>30</y>
+      <w>138</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Ambiente
+--
+id_ambiente:int (4) primary key
+descripcion_ambiente:varchar (30)
+--
+modificar_ficha  ()
+eliminar_ficha ()
+crear_ficha ()
+consultar_ficha ()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>708</x>
+      <y>18</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;114;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>822</x>
+      <y>282</y>
+      <w>138</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Ambiente_Ficha
+--
+id_ambiente:int (4)
+id_ficha:int (8)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>870</x>
+      <y>90</y>
+      <w>30</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;18;192</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>594</x>
+      <y>282</y>
+      <w>138</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Ficha
+--
+id_ficha:int (8) primary key
+id_programa:int (10)
+id_horario:int (2)
+--
+modificar  ()
+eliminar ()
+crear ()
+consultar ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>594</x>
+      <y>192</y>
+      <w>138</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Ficha_Instructor
+--
+id_ficha:int (8)
+id_instructor:int (12)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>642</x>
+      <y>210</y>
+      <w>30</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;18;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>714</x>
+      <y>270</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;108;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>180</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;114;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>354</x>
+      <y>192</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Instructor
+--
+id_instructor:Int (15) primary key
+nombre_instructor:varchar (30)
+apellido_instructor:varchar (30)
+titulo_instructor:varchar (30)
+telefono_instructor:Int (12)
+correo_instructor:varchar (30)
+--
+Crear_Clase ()
+Modificar_Contraseña ()
+Generar_Reporte ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>108</x>
+      <y>192</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Administrador
+--
+id_administrador: Int (15) primary key
+nombre_administrador: varchar (30)
+apellido_admiistrador: varchar (30)
+cargo_administrador: varchar (30)
+telefono_administrador: Int
+correo_administrador:Int
+--
+Crear_usuario ()
+Modificar_usuario ()
+Borrar_usuario ()
+Buscar_usuario
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>180</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;114;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>270</y>
+      <w>126</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;126;72;126;72;18;114;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>354</x>
+      <y>390</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Programa
+--
+id_programa:Int (15) primary key
+nombre_programa:varchar (50)
+descripción_programa:varchar (50)
+--
+Crear ()
+Modificar ()
+Eliminar ()
+Consultar ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>816</x>
+      <y>390</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Horario
+--
+id_horario:Int (2) primary key
+nombre_horario:varchar (15)
+trimestre:varchar (15)
+ini_trimestre: date
+fin_trimestre: date
+--
+Crear ()
+Modificar ()
+Eliminar ()
+Consultar ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>714</x>
+      <y>300</y>
+      <w>114</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>18;18;60;18;60;108;102;108</additional_attributes>
+  </element>
+</diagram>
